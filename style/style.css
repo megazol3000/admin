@@ -1,0 +1,116 @@
+body {
+	background-color: #f2f2f2;
+	font-family: sans-serif;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+h2 {
+	color: #6d6d6d;
+} 
+
+ul {
+	padding-left: 15px;
+	line-height: 25px;
+}
+
+header {margin-bottom: 50px;}
+footer {margin-top: 50px;}
+main {
+	width: 70%;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 2px solid #e1e3e3;
+	border-radius: 5px;
+	box-shadow:         0px 0px 18px 0px rgba(50, 50, 50, 0.13);
+	padding: 15px 55px;
+}
+.headline {
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	border-bottom: 5px solid #6d6d6d;
+}
+.contacts {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	min-width: 100%;
+	margin-bottom: 40px;
+}
+.contacts-data {
+	min-width: 60%;
+}
+
+.contacts-photo {
+	min-width: 30%;
+	min-height: 371px;
+	background-image: url(img/1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+.contact-data_item {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	border-bottom: 3px dotted #c7c7c7;
+}
+.education, .skills, .charges, .additionals {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	        -webkit-box-align: baseline;
+	margin-bottom: 30px;
+}
+
+.experience {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+	        -webkit-box-align: baseline;
+
+}
+
+.experience-info, .education-info, .skills-info, .additionals-info {
+	min-width: 70%;
+	margin-left: 40px;
+}
+
+.link {
+	color:blue;
+}
+
+@media (max-width: 1000px) {
+	.contacts {-webkit-box-orient: vertical;-webkit-box-direction: normal;flex-direction: column; -webkit-box-align: center; align-items: center;}
+	.contacts-photo {width: 300px}
+	.contacts-data {margin-bottom: 40px; min-width: 100%;}
+	.education, .experience, .skills, .charges, .additionals {-webkit-box-orient: vertical;-webkit-box-direction: normal;flex-direction: column;}
+	.experience-info, .education-info, .skills-info, .additionals-info {margin: 0;}
+}
+
+@media (max-width: 600px) {
+	.contact-data_item {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 15px 0 15PX 0;
+	}
+	.contact-data_item p {
+		margin: 0;
+	}
+	.contact-data_item :nth-child(1) {
+		margin-bottom: 5px;
+	}
+}
